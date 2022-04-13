@@ -1,0 +1,188 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding:0px;
+    margin: 0px;
+    font-family: 'Poppins', 'sans-serif';
+}
+/*--------------------HEADER----------------------------*/
+.header{
+    min-height: 100vh;
+    min-width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.705)),url(../img/ev-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background:rgb(111, 95, 96);
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    left: 50%;
+    top: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 65px;
+}
+.text-box p{
+    font-size: 30px;
+    margin: 10px 0px 40px;
+    color:whitesmoke;
+}
+.hero-btn{
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    background: transparent;
+    position: relative;
+    cursor:pointer;
+}
+.hero-btn:hover{
+    border: 1px solid black;
+    background:rgb(111, 95, 96) ;
+    color:black;
+    font-weight: bold;
+    transition: .5s;
+}
+/*--------------------ABOUT----------------------------*/
+.about{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/ev3.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.innerbox{
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: auto;
+    padding: 20px 30px;
+    width: 650px;
+    height:auto;
+    border-radius: 20px;
+    transition: 0.5s;
+    filter: drop-shadow(10);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(90%);
+}
+.innerbox:hover{
+    border-radius: 0px;
+}
+.innerbox h1{
+    padding-top: 20px;
+}
+.innerbox p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/*--------------------CONTACT US----------------------------*/
+.contact{
+    background:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../img/2.jpg) no-repeat center;
+    filter: blur(1);
+    background-size: cover;
+    padding: 180px 0px ;
+    min-height: 100vh;
+    padding-bottom: 0;
+}
+.contact h1{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.border{
+    width: 100px;
+    height: 10px;
+    background:rgb(255, 255, 255) ;
+    margin: 40px auto;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0px 10px;
+    overflow: hidden;
+}
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background:rgba(255, 255, 255, 0.7);
+    padding: 20px 40px;
+    outline: none;
+    color:black;
+    transition:0.5s;
+}
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+
+}
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background:rgb(255, 255, 255,0.7);
+    color: rgb(0, 0, 0);
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer p{
+    size: 10px;
+}
+footer p a{
+    size: 2px;
+    text-decoration: none;
+    color: #fff;
+}
